@@ -2,130 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Greg Davidson | Music From the Heart</title>
-  <meta name="description" content="Greg Davidson Artist — soulful live music, heartfelt performances, and booking inquiries." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Greg Davidson</title>
+  <meta name="description" content="Greg Davidson — soulful, acoustic live music. Booking: gregcdavidson@gmail.com">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            charcoal: '#111315',
-            sand: '#f5efe6',
-            ember: '#d2a15f',
-            bronze: '#8f6940'
-          },
-          fontFamily: {
-            display: ['Georgia', 'serif'],
-            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          },
-          boxShadow: {
-            glow: '0 20px 60px rgba(0,0,0,.35)'
-          }
-        }
-      }
-    }
-  </script>
+  <style>
+    :root{--charcoal:#0f1112;--offwhite:#f6f4ef;--amber:#d29b4a}
+  </style>
 </head>
-<body class="bg-charcoal text-sand font-body">
-  <section class="relative min-h-screen overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('./greg-hero.jpg')"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-charcoal"></div>
-    <div class="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-end px-6 py-14 md:px-10">
-      <div class="max-w-3xl rounded-3xl border border-white/10 bg-black/25 p-7 shadow-glow backdrop-blur-sm md:p-10">
-        <p class="mb-3 text-sm uppercase tracking-[0.35em] text-ember">Greg Davidson Artist</p>
-        <h1 class="font-display text-5xl leading-tight md:text-7xl">Music From the Heart</h1>
-        <p class="mt-5 max-w-2xl text-lg text-sand/85 md:text-xl">
-          Soulful live performances, honest songs, and a warm acoustic presence that brings people together.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="mailto:gregcdavidson@gmail.com" class="rounded-full bg-ember px-6 py-3 font-semibold text-charcoal transition hover:brightness-110">Book Greg</a>
-          <a href="#about" class="rounded-full border border-sand/30 px-6 py-3 font-medium text-sand transition hover:bg-white/10">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<body class="bg-[color:var(--charcoal)] text-[color:var(--offwhite)] font-sans">
+  <main class="max-w-3xl mx-auto p-4">
+    <header class="flex items-center justify-between py-4">
+      <div class="text-lg font-serif">Greg Davidson</div>
+      <a href="#booking" class="text-sm text-[color:var(--amber)]">Book</a>
+    </header>
 
-  <main>
-    <section id="about" class="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_.9fr] md:px-10">
-      <div>
-        <p class="text-sm uppercase tracking-[0.3em] text-ember">About</p>
-        <h2 class="mt-3 font-display text-4xl md:text-5xl">Performing music is in his blood.</h2>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-sand/82">
-          Greg Davidson brings a heartfelt, down-to-earth energy to every performance. With a voice rooted in real feeling and a style built for intimate rooms, community gatherings, and live connection, his sets feel personal from the first song to the last.
-        </p>
-        <p class="mt-5 max-w-2xl text-lg leading-8 text-sand/75">
-          This page is built from public artist information and imagery, highlighting Greg as a live performer currently booking and sharing music across streaming platforms.
-        </p>
-      </div>
-      <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-glow">
-        <img src="./assets/greg-portrait.png" alt="Greg Davidson performing with guitar" class="h-full w-full object-cover" />
-      </div>
-    </section>
-
-    <section class="border-y border-white/10 bg-white/5">
-      <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3 md:px-10">
-        <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
-          <p class="text-sm uppercase tracking-[0.25em] text-ember">Live Feel</p>
-          <h3 class="mt-3 text-2xl font-semibold">Warm acoustic sets</h3>
-          <p class="mt-4 text-sand/75">Ideal for venues, community events, and intimate gatherings where connection matters as much as the music.</p>
-        </div>
-        <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
-          <p class="text-sm uppercase tracking-[0.25em] text-ember">Style</p>
-          <h3 class="mt-3 text-2xl font-semibold">Soulful and sincere</h3>
-          <p class="mt-4 text-sand/75">A grounded performance style that leans into feeling, storytelling, and songs that land with the room.</p>
-        </div>
-        <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
-          <p class="text-sm uppercase tracking-[0.25em] text-ember">Booking</p>
-          <h3 class="mt-3 text-2xl font-semibold">Easy to reach</h3>
-          <p class="mt-4 text-sand/75">For live music bookings and performance inquiries, reach out directly by email.</p>
+    <!-- Hero -->
+    <section class="py-6">
+      <div class="bg-black/40 p-6 rounded-lg">
+        <h1 class="text-3xl sm:text-4xl font-serif">Greg Davidson</h1>
+        <p class="mt-3 text-[color:var(--offwhite)/90]">Music From the Heart — soulful, acoustic performances.</p>
+        <div class="mt-5 flex gap-3">
+          <a href="mailto:gregcdavidson@gmail.com" class="bg-[color:var(--amber)] text-[color:var(--charcoal)] px-4 py-2 rounded">Book Greg</a>
+          <a href="#media" class="border border-[color:var(--offwhite)] px-3 py-2 rounded">Watch Live</a>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-6 py-20 md:px-10">
-      <div class="flex items-end justify-between gap-6">
-        <div>
-          <p class="text-sm uppercase tracking-[0.3em] text-ember">Gallery</p>
-          <h2 class="mt-3 font-display text-4xl md:text-5xl">Live, local, real.</h2>
-        </div>
-        <a href="mailto:gregcdavidson@gmail.com" class="hidden rounded-full border border-sand/25 px-5 py-3 text-sm font-medium text-sand/90 md:inline-block">Request Booking</a>
-      </div>
-      <div class="mt-10 grid gap-5 md:grid-cols-12">
-        <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 md:col-span-7">
-          <img src="./greg-live-wide.jpg" alt="Greg Davidson live performance" class="h-[420px] w-full object-cover" />
-        </div>
-        <div class="grid gap-5 md:col-span-5">
-          <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
-            <img src="./assets/greg-live-close.png" alt="Greg Davidson singing into microphone" class="h-[200px] w-full object-cover" />
-          </div>
-          <div class="rounded-[2rem] border border-ember/20 bg-ember/10 p-8">
-            <p class="text-sm uppercase tracking-[0.25em] text-ember">Artist line</p>
-            <blockquote class="mt-4 font-display text-3xl leading-tight text-sand">“Performing music is in my blood. It pours from the heart.”</blockquote>
-          </div>
-        </div>
+    <!-- Featured video -->
+    <section id="media" class="py-6">
+      <h2 class="font-serif text-2xl">Featured Live Performance</h2>
+      <p class="mt-2 text-sm text-[color:var(--offwhite)/80]">A sample live clip from Greg’s channel.</p>
+      <div class="mt-4 aspect-video w-full bg-black rounded overflow-hidden">
+        <!-- Channel uploads embed (replace if you want a single explicit video) -->
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=user_uploads&list=GregDavidsonMusic2020" title="Greg Davidson channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-6 pb-20 md:px-10">
-      <div class="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/3 p-8 md:p-12">
-        <div class="grid gap-10 md:grid-cols-[1.2fr_.8fr] md:items-center">
-          <div>
-            <p class="text-sm uppercase tracking-[0.3em] text-ember">Booking</p>
-            <h2 class="mt-3 font-display text-4xl md:text-5xl">Bring Greg Davidson to your venue or event.</h2>
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-sand/80">
-              For availability, performance inquiries, and booking details, reach out directly. A simple, heartfelt live set can change the whole room.
-            </p>
-          </div>
-          <div class="rounded-[1.75rem] border border-white/10 bg-black/25 p-7">
-            <p class="text-sm uppercase tracking-[0.25em] text-sand/60">Contact</p>
-            <a href="mailto:gregcdavidson@gmail.com" class="mt-4 block break-all text-2xl font-semibold text-ember">gregcdavidson@gmail.com</a>
-            <a href="mailto:gregcdavidson@gmail.com" class="mt-7 inline-flex rounded-full bg-ember px-6 py-3 font-semibold text-charcoal transition hover:brightness-110">Email for Booking</a>
-          </div>
-        </div>
+    <!-- About -->
+    <section id="about" class="py-6">
+      <h2 class="font-serif text-2xl">About</h2>
+      <p class="mt-3 text-[color:var(--offwhite)/85]">Performing music is in Greg Davidson’s blood. It pours from the heart — every song is a story shared with the room. Greg blends familiar favorites with heartfelt originals to create intimate, memorable sets. For booking: <a href="mailto:gregcdavidson@gmail.com" class="text-[color:var(--amber)]">gregcdavidson@gmail.com</a>.</p>
+    </section>
+
+    <!-- Live -->
+    <section id="live" class="py-6">
+      <h2 class="font-serif text-2xl">Live — What to Expect</h2>
+      <ul class="mt-3 list-disc pl-5 text-[color:var(--offwhite)/85] space-y-1">
+        <li>Solo acoustic or tailored full sets for small venues</li>
+        <li>Song-first performances focused on connection</li>
+        <li>Perfect for restaurants, bars, community events, and private gatherings</li>
+      </ul>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="py-6">
+      <h2 class="font-serif text-2xl">More Than Music</h2>
+      <p class="mt-3 text-[color:var(--offwhite)/85]">Greg’s performances are an invitation — to sing, to listen, and to be part of a shared moment. He plays for the room, the story, and the people who gather to hear it.</p>
+    </section>
+
+    <!-- Booking/Contact -->
+    <section id="booking" class="py-6">
+      <h2 class="font-serif text-2xl">Book Greg Davidson</h2>
+      <p class="mt-2 text-[color:var(--offwhite)/85]">To inquire about availability or fees, email:</p>
+      <div class="mt-3">
+        <a href="mailto:gregcdavidson@gmail.com" class="bg-[color:var(--amber)] text-[color:var(--charcoal)] px-4 py-2 rounded font-medium">Email gregcdavidson@gmail.com</a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="pt-8 pb-4 text-sm text-[color:var(--offwhite)/70]">
+      <div>Greg Davidson — Music From the Heart</div>
+    </footer>
   </main>
 </body>
 </html>
